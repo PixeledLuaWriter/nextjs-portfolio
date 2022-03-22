@@ -13,4 +13,4 @@ else
   exit 0;
 fi
 
-init.sh
+bash init.sh
