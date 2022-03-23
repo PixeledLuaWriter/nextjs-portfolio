@@ -1,6 +1,6 @@
 import React from "react";
 
-function URLCard({ props, children, maintitle, description }) => {
+function URLCard({ props, children, maintitle, description }) {
    return (
        <a {...props}>
         <h2>
