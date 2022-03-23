@@ -2,7 +2,7 @@ import React from "react";
 
 function URLCard({ props, children, main_title, description }) => {
    return (
-       <a {...props}>
+       <a ...props>
         <h2>
             {main_title}
         </h2>
