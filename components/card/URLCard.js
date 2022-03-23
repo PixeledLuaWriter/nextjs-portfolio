@@ -1,13 +1,13 @@
 import React from "react";
 
-function URLCard({ props, children, {label: {text}, seclabel: {text2}} }) => {
+function URLCard({ props, children, main_title, description }) => {
    return (
        <a {...props}>
         <h2>
-            {text}
+            {main_title}
         </h2>
         <p>
-            {text2}
+            {description}
         </p>
          {children}
        </a>
