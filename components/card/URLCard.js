@@ -1,6 +1,6 @@
 import React from "react";
 
-function URLCard({ props, {label: {text}, seclabel: {text2}} }) => {
+function URLCard({ props, children, {label: {text}, seclabel: {text2}} }) => {
    return (
        <a {...props}>
         <h2>
@@ -9,6 +9,7 @@ function URLCard({ props, {label: {text}, seclabel: {text2}} }) => {
         <p>
             {text2}
         </p>
+         {children}
        </a>
    );
 };
