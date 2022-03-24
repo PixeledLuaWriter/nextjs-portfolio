@@ -50,7 +50,17 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-          <URLCard classname={styles.card + "bg-gradient-to-br from-amber-500 via-neutral-600 to-amber-200"} maintitle="Click here to go to the main GitHub repository &darr;" description="This link will take you over to the source code" href="https://github.com/PixeledLuaWriter/nextjs-portfolio" target="_blank" rel="noopener noreferrer" />
+          <a 
+            classname={styles.card + "bg-gradient-to-br from-amber-500 via-neutral-600 to-amber-200"}
+            href="https://github.com/PixeledLuaWriter/nextjs-portfolio"
+          >
+            <h2>
+              Click Here To View Source Code &uarr;
+            </h2>
+            <p>
+              The source code of this website is currently closed source at the moment
+            </p>
+          </a>
         </div>
       </main>
 
