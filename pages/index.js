@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import URLCard from '../components/card/URLCard.js'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -49,6 +50,8 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+          <URLCard class name={styles.card + "bg-gradient-to-br from-amber-500 via-neutral-600 to-amber-200"} maintitle="Click here to go to the main GitHub repository &darr;" description="This link will take you over to the source code" href="https://github.com/PixeledLuaWriter/nextjs-portfolio" target="_blank" ref="noopener noreferrer">
+          </URLCard>
         </div>
       </main>
 
