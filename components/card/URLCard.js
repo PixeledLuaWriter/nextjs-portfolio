@@ -1,6 +1,6 @@
 import React from "react";
 
-function URLCard({ props, children, maintitle, description }) {
+function URLCard({ props, maintitle, description }) {
    return (
        <a {...props}>
         <h2>
@@ -9,7 +9,6 @@ function URLCard({ props, children, maintitle, description }) {
         <p>
             {description}
         </p>
-         {children}
        </a>
    );
 };
