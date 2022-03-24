@@ -51,7 +51,7 @@ export default function Home() {
             </p>
           </a>
           <a 
-            className={styles.card + "bg-gradient-to-br from-amber-500 via-neutral-600 to-amber-200"}
+            className={styles.card}
             href="https://github.com/PixeledLuaWriter/nextjs-portfolio"
           >
             <h2>
