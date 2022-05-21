@@ -13,7 +13,7 @@ export default function Home() {
       <main className="transition-colors ease-in-out max-w-4xl mx-auto mt-16 antialiased">
         <About/>
         <Link href={"/github/repository"}>
-          <a className='rounded-[6px] bg-gradient-to-br from-amber-700 via-neutral-900 to-orange-500'>
+          <a className='rounded-[6px] bg-gradient-to-br m-2 from-amber-700 via-neutral-900 to-orange-500'>
             Click Here To View The Repositories
           </a>
         </Link>
