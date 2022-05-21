@@ -1,6 +1,7 @@
 import React from "react"
 import Image from "next/image"
 import profile from "../public/PixeledLuaWriter.jpg"
+import Link from "next/link"
 
 const About = () => {
     return (
@@ -20,6 +21,13 @@ const About = () => {
                         <p className="m-4">
                             This portfolio contains a stack of the following: Next.JS, React.JS, Node.JS, HTML5, CSS3, PostCSS and TailwindCSS
                         </p>
+                    </div>
+                    <div className="mt-4">
+                    <Link href={"/github/repository"}>
+                      <a className='rounded-[6px] bg-gradient-to-br m-2 p-2 from-amber-700 via-neutral-900 to-orange-500'>
+                          Click Here To View The Repositories
+                      </a>
+                      </Link>
                     </div>
                 </div>
                 <div className="flex-shrink-0 lg:mt-12 lg:px-4 mb-10">

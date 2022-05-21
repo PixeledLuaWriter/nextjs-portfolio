@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import About from "../components/About";
+import About from "../components/About"
 
 export default function Home() {
   return (
@@ -12,11 +11,6 @@ export default function Home() {
 
       <main className="transition-colors ease-in-out max-w-4xl mx-auto mt-16 antialiased">
         <About/>
-        <Link href={"/github/repository"}>
-          <a className='rounded-[6px] bg-gradient-to-br m-2 p-2 from-amber-700 via-neutral-900 to-orange-500'>
-            Click Here To View The Repositories
-          </a>
-        </Link>
       </main>
     </div>
   )

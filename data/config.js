@@ -30,6 +30,12 @@ const projects = {
             /** github: 'PixeledLuaWriter/PixeledLuaWriter.github.io' */
             tags: ["lua", "roblox-lua", "roblox-scripting"]
         },
+        {
+            title: 'nextjs-portfolio',
+            description: 'very very first portfolio that was ever created',
+            link: 'https://github.com/PixeledLuaWriter/nextjs-portfolio',
+            tags: ["portfolio", "nextjs", "portfolio-website"]
+        },
     ]
 };
 
