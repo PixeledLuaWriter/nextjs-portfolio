@@ -2,6 +2,9 @@
 const withTM = require("next-transpile-modules")(["react-github-btn"])
 const nextConfig = {
   reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  }
 }
 
 module.exports = nextConfig
