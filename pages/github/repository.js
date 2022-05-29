@@ -2,7 +2,6 @@ import config from "../../data/config";
 import React from "react";
 import Repositories from "../../components/Repo";
 import Head from "next/head";
-import { wrapGrid } from "animate-css-grid";
 
 /**
                     <div className="mt-8">
