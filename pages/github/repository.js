@@ -2,6 +2,7 @@ import config from "../../data/config";
 import React from "react";
 import Repositories from "../../components/Repo";
 import Head from "next/head";
+import { wrapGrid } from "animate-css-grid";
 
 /**
                     <div className="mt-8">
@@ -37,14 +38,14 @@ import Head from "next/head";
  */
 
 export default function RepositoryHome() {
-   return (
+   return wrapGrid(
     <div className="transition-colors container px-4 mx-auto">
         <Head>
             <title>Repositories</title>
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className="transition-colors lg:space-x-5 lg:flex lg:flex-row item-center lg:-mx-4 flex flex-col-reverse text-center lg:text-left">
-            <div className="transition-colors lg:px-4 lg:mt-12 ">
+            <div className="grid gap-2 grid-flow-col grid-col-3 transition-colors lg:px-4 lg:mt-12 ">
                  <div className="">
                     <div className="overflow-x-hidden w-full antialiased">
                         <h2 className="mx-0 max-w-max text-left relative mb-4 md:w-max">
