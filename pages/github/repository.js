@@ -2,50 +2,22 @@ import config from "../../data/config";
 import React from "react";
 import Repositories from "../../components/Repo";
 import Head from "next/head";
+import SmoothGrid from "../../components/SmoothGrid";
 
-/**
-                    <div className="mt-8">
-                        {projects.projects.map((item, index) => {
-                            return (
-                                <div key={index} className="p-6 mb-4 rounded-xl border-[0.5px] border-gray-700">
-                                    <h3>
-                                        {item.title}
-                                    </h3>
-                                    <p>
-                                        {item.description}
-                                    </p>
-                                    {item.link && (
-                                        <a href={item.link} rel="noreferrer" target="_blank" className="flax items-center py-1 px-3">
-                                            <FaExternalLinkAlt className="inline align-baseline" />
-                                            <span className="ml-2 text-gray-700 transition-colors duration-500">
-                                                {item.link}
-                                            </span>
-                                        </a>
-                                    )}
-                                    {item.github && (
-                                        <a href={`https://github.com/PixeledLuaWriter/${item.github}`} rel="noreferrer" target="_blank" className="flax items-center py-1 px-3">
-                                            <FaGithub className="inline align-baseline" />
-                                            <span className="ml-2 text-gray-700 transition-colors duration-500">
-                                                {item.github}
-                                            </span>
-                                        </a>
-                                    )}
-                                </div>
-                            );
-                        })}
-                    </div>
+/** 
+ * Render the RepositoryHome page inside a div element that's automatically configured for the webpage like the other conponent files are but leave the Next.js Head title alone
+ * and use the configuration for the title and description for the actual piece within the webpage before rendering
+ * the repositories component with the repos prop set with the project list data in the configuration file inside the smoothgrid component with the repositories data
  */
 
-export default function RepositoryHome() {
-   return (
-    <div className="transition-colors container px-4 mx-auto">
-        <Head>
-            <title>Repositories</title>
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <div className="transition-colors lg:space-x-5 lg:flex lg:flex-row item-center lg:-mx-4 flex flex-col-reverse text-center lg:text-left">
-            <div className="grid  gap-2 grid-flow-col grid-col-3 transition-all lg:px-4 lg:mt-12 ">
-                 <div className="">
+export default function RepositoryHome() { 
+    return (
+        <div className="transition-colors container px-4 mx-auto">
+            <Head>
+                <title>Repositories</title>
+                <meta name="description" content="The Repositories Homepage of the portfolio" />
+            </Head>
+            <div className="">
                     <div className="overflow-x-hidden w-full antialiased">
                         <h2 className="mx-0 max-w-max text-left relative mb-4 md:w-max">
                             {config.title}
@@ -54,10 +26,10 @@ export default function RepositoryHome() {
                     <p className="text-lg">
                         {config.description}
                     </p>
-                    <Repositories repos={config.projects}/>
                 </div>
-            </div>
+            <SmoothGrid>
+                <Repositories repos={config.repos} />
+            </SmoothGrid>
         </div>
-    </div>
-  );
+    );
 }
