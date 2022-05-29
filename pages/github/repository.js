@@ -27,7 +27,7 @@ export default function RepositoryHome() {
                         {config.description}
                     </p>
                 </div>
-            <SmoothGrid gap="1rem" gridTemplateColumns="1fr" gridTemplateRows="1fr">
+            <SmoothGrid className="lg:space-x-5 lg:grid lg:flex-row lg:-mx-4" gap="1rem" gridTemplateColumns="repeat(4, minmax(0, 1fr))" gridTemplateRows="repeat(3, minmax(0, 1fr))">
                 <Repositories repos={config.projects} />
             </SmoothGrid>
         </div>
