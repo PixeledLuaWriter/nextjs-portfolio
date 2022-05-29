@@ -28,7 +28,7 @@ export default function RepositoryHome() {
                     </p>
                 </div>
             <SmoothGrid>
-                <Repositories repos={config.repos} />
+                <Repositories repos={config.projects} />
             </SmoothGrid>
         </div>
     );
