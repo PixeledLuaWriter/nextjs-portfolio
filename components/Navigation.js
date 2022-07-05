@@ -4,7 +4,7 @@ import ThemeSwitch from "./ThemeSwitch";
 
 const Navigation = () => {
     return (
-        <div className="transition-colors sticky top-0 z-20 py-2 bg-white md:py-6 md:mb-6 dark:bg-black rounded">
+        <div className="transition-colors sticky top-0 z-20 bg-white p-6 m-0 dark:bg-black bg-opacity-50 dark:bg-opacity-50 rounded backdrop-blur-md">
             <div className="transition-colors container px-4 mx-auto lg:max-w-4xl flex items-center justify-between">
                 <Link href="/">
                     <a

@@ -15,7 +15,11 @@ export default function RepositoryHome() {
         <div className="transition-colors container px-4 mx-auto">
             <Head>
                 <title>Repositories</title>
-                <meta name="description" content="The Repositories Homepage of the portfolio" />
+                <meta property='og:title' content='The repository homepage of all of my projects' />
+                <meta name="theme-color" content="#000000" />
+                <meta property="og:description" content="The Repositories Homepage of the portfolio" />
+                <meta property='og:image' content="https://www.pixeledluawriter.ml/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FPixeledLuaWriter.6d457aaa.jpg&w=256&q=75" />
+                <meta property='twitter:card' content='summary_large_image' />
             </Head>
             <div className="">
                     <div className="overflow-x-hidden w-full antialiased">
