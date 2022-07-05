@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import Paper from "@mui/material/Paper"
 import ThemeSwitch from "./ThemeSwitch";
 import HamburgerMenu from "./HamburgerMenu"
 
@@ -24,7 +25,7 @@ const Navigation = () => {
                     "display": isOpen ? "block" : "none",
                     "zIndex": "1",
                     "position": "absolute",
-                    "top": "0",
+                    "top": "-5px",
                     "right": "0",
                     "left": "0",
                     "bottom": "0",
@@ -34,27 +35,32 @@ const Navigation = () => {
                     "transform": isOpen ? "translateX(0)" : "translateX(100%)",
                     "borderRadius": "0 0 0.5rem 0.5rem",
                 }}>
-                    <Link href="/">
-                        <a
-                            className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx uppercase text dark:text-white"}
-                        >
-                            Home
-                        </a>
-                    </Link>
-                    <Link href="/about">
-                        <a
-                            className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx uppercase text dark:text-white"}
-                        >
-                            About
-                        </a>
-                    </Link>
-                    <Link href='/'>
-                        <a
-                            className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx uppercase text dark:text-white"}
-                        >
-                            Hobbies [coming soon]
-                        </a>
-                    </Link>
+                    <Paper className="transition-colors duration-150 bg-white dark:bg-black bg-opacity-50 dark:bg-opacity-50 rounded-lg shadow-md">
+                        <Link href="/">
+                            <a
+                                className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx uppercase text dark:text-white"}
+                                onClick={handleClosing}
+                            >
+                                Home
+                            </a>
+                        </Link>
+                        <Link href="/about">
+                            <a
+                                className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx uppercase text dark:text-white"}
+                                onClick={handleClosing}
+                            >
+                                About
+                            </a>
+                        </Link>
+                        <Link href='/'>
+                            <a
+                                className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx uppercase text dark:text-white"}
+                                onClick={handleClosing}
+                            >
+                                Hobbies [coming soon]
+                            </a>
+                        </Link>
+                    </Paper>
                 </div>
                 <ThemeSwitch />
             </div>
