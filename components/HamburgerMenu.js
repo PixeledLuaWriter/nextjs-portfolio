@@ -1,12 +1,12 @@
 import Box from "@mui/material/Box"
 import { Cross as Hamburger } from "hamburger-react";
 
-const HamburgerMenu = ({ toggled, onToggled }) => {
+const HamburgerMenu = ({ toggled, toggle }) => {
     return (
         <Box display="flex" justifyContent="center" alignItems="center">
         <Hamburger
             toggled={toggled}
-            onToggled={onToggled}
+            toggle={toggle}
             width={30}
             height={30}
             strokeWidth={3}
