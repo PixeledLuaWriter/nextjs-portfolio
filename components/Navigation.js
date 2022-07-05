@@ -20,7 +20,7 @@ const Navigation = () => {
                         PixeledLuaWriter
                     </a>
                 </Link>
-                <HamburgerMenu toggled={isOpen} onToggled={setIsOpen} />
+                <HamburgerMenu toggled={isOpen} toggle={setIsOpen} />
                 <div className="" style={{
                     "display": isOpen ? "block" : "none",
                     "zIndex": "1",
