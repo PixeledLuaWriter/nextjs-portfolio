@@ -1,7 +1,7 @@
-import About from "../components/About";
+import AboutContent from "../components/About";
 import Head from "next/head";
 
-const About = () => {
+export default function AboutPage() {
     return (
         <div className="transition-colors container px-4 mx-auto">
             <Head>
@@ -14,7 +14,7 @@ const About = () => {
                 <meta property='og:image' content="https://www.pixeledluawriter.ml/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FPixeledLuaWriter.6d457aaa.jpg&w=256&q=75" />
                 <meta property='twitter:card' content='summary_large_image' />
             </Head>
-            <About />
+            <AboutContent />
         </div>
     )
 }
