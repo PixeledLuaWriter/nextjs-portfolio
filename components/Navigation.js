@@ -35,7 +35,7 @@ const Navigation = () => {
                     "transform": isOpen ? "translateX(0)" : "translateX(100%)",
                     "borderRadius": "0 0 0.5rem 0.5rem",
                 }}>
-                    <Paper className="transition-colors duration-150 bg-white dark:bg-black bg-opacity-50 dark:bg-opacity-50 rounded-lg shadow-md">
+                    <Paper className="transition-colors top-[-0.5rem] container duration-150 bg-white dark:bg-black bg-opacity-50 dark:bg-opacity-50 rounded-lg shadow-md">
                         <Link href="/">
                             <a
                                 className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx uppercase text dark:text-white"}
