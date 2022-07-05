@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import About from "../components/About"
 
 export default function Home() {
   return (
@@ -16,7 +15,12 @@ export default function Home() {
       </Head>
 
       <div className="transition-colors ease-in-out max-w-4xl mx-auto mt-16 antialiased">
-        <About/>
+        <div className="transition-colors ease-in-out lg:px-4 lg:mt-12 ">
+          <h1 className="transition-colors ease-in-out text-2xl font-bold text-gray-900 lg:text-5xl dark:text-white">
+                        Hey there, Welcome To My Portfolio, Hope you'll enjoy the show for
+                        the specialties that this brings
+          </h1>
+        </div>
       </div>
     </div>
   )
