@@ -25,7 +25,7 @@ const Navigation = () => {
                     "display": isOpen ? "block" : "none",
                     "zIndex": "1",
                     "position": "absolute",
-                    "top": "-5px",
+                    "top": "5rem",
                     "right": "0",
                     "left": "0",
                     "bottom": "0",
@@ -35,7 +35,7 @@ const Navigation = () => {
                     "transform": isOpen ? "translateX(0)" : "translateX(100%)",
                     "borderRadius": "0 0 0.5rem 0.5rem",
                 }}>
-                    <Paper className="transition-colors duration-150 top-0 bg-white dark:bg-black bg-opacity-50 dark:bg-opacity-50 rounded-lg shadow-md">
+                    <Paper className="transition-colors duration-150 bg-white dark:bg-black bg-opacity-50 dark:bg-opacity-50 rounded-lg shadow-md">
                         <Link href="/">
                             <a
                                 className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx uppercase text dark:text-white"}
@@ -50,6 +50,14 @@ const Navigation = () => {
                                 onClick={handleClosing}
                             >
                                 About
+                            </a>
+                        </Link>
+                        <Link href="/github/repository">
+                            <a
+                                className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx uppercase text dark:text-white"}
+                                onClick={handleClosing}
+                            >
+                                Repositories
                             </a>
                         </Link>
                         <Link href='/'>
