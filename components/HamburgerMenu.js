@@ -1,4 +1,4 @@
-import { Box } from "@mui/material/Box"
+import Box from "@mui/material/Box"
 import { Cross as Hamburger } from "hamburger-react";
 
 const HamburgerMenu = ({ toggled, onToggled }) => {
