@@ -16,3 +16,5 @@ const HamburgerMenu = ({ toggled, onToggled }) => {
         </Box>
     )
 }
+
+export default HamburgerMenu
