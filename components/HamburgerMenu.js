@@ -5,11 +5,12 @@ const HamburgerMenu = ({ toggled, toggle }) => {
         <Hamburger
             toggled={toggled}
             toggle={toggle}
+            direction="right"
             width={30}
             height={30}
             strokeWidth={3}
             strokeColor="#fff"
-            animationDuration={0.5}
+            animationDuration={0.2}
         />
     )
 }
