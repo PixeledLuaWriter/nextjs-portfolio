@@ -60,12 +60,12 @@ const Navigation = () => {
                                     Repositories
                                 </a>
                             </Link>
-                            <Link href='/'>
+                            <Link href='/hobbies'>
                                 <a
                                     className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx uppercase text dark:text-white"}
                                     onClick={handleClosing}
                                 >
-                                    Hobbies [coming soon]
+                                    Hobbies
                                 </a>
                             </Link>
                         </div>
