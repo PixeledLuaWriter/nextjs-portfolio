@@ -36,6 +36,12 @@ const projects = {
             link: 'https://github.com/PixeledLuaWriter/nextjs-portfolio',
             tags: ["portfolio", "nextjs", "portfolio-website"]
         },
+        {
+            title: 'Javascript-RBXGuid',
+            description: "Basically a javascript implementation of roblox's guid format but created with a random string function",
+            link: 'https://github.com/PixeledLuaWriter/Javascript-RBXGuid',
+            tags: ["JavaScript", "roblox-scripting", "roblox-to-javascript"]
+        },
     ]
 };
 
