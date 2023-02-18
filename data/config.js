@@ -42,6 +42,24 @@ const projects = {
             link: 'https://github.com/PixeledLuaWriter/Javascript-RBXGuid',
             tags: ["JavaScript", "roblox-scripting", "roblox-to-javascript"]
         },
+        {
+            title: 'Barebones-Discord.JS-v13-template',
+            description: "A handmade template of a discord bot using discord.js v13.1.0",
+            link: 'https://github.com/PixeledLuaWriter/Barebones-Discord.JS-v13-template',
+            tags: ['discord-bot', 'discord-js', 'v13']
+        },
+        {
+            title: 'caesar',
+            description: "A CLI tool based on the caesar cipher",
+            link: 'https://github.com/PixeledLuaWriter/caesar',
+            tags: ['cli', 'caesar-cipher']
+        },
+        {
+            title: "dotfiles-config-files",
+            description: "thing that i use for windows terminal and neovim",
+            link: 'https://github.com/PixeledLuaWriter/dotfiles-config-files',
+            tags: ['dotfiles', 'dotfiles-windows', 'dotfiles-setup']
+        }
     ]
 };
 

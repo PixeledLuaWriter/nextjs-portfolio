@@ -1,6 +1,7 @@
 {
   "name": "testing",
   "version": "0.1.0",
+  "packageManager": "pnpm@7.27.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,25 +10,29 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.0.0-rc.0",
-    "@emotion/styled": "^11.9.3",
-    "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.8.7",
+    "@babel/core": "^7.20.12",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.9",
+    "@mui/material": "^5.11.9",
+    "animate-css-grid": "^1.4.3",
     "hamburger-react": "^2.5.0",
     "next": "12.1.0",
     "next-themes": "^0.1.1",
-    "next-transpile-modules": "^9.0.0",
+    "next-transpile-modules": "^9.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-github-btn": "^1.2.1",
-    "react-icons": "^4.3.1",
-    "react-transition-group": "^2.2.1"
+    "react-flip-toolkit": "^7.0.17",
+    "react-github-btn": "^1.4.0",
+    "react-icons": "^4.7.1",
+    "react-transition-group": "^2.9.0",
+    "typescript": "^4.9.5"
   },
   "devDependencies": {
     "eslint": "8.10.0",
     "eslint-config-next": "12.1.0",
-    "postcss": "^8.4.7",
-    "tailwindcss": "^3.0.23",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.6",
     "tailwindcss-textshadow": "^2.1.3"
   }
 }

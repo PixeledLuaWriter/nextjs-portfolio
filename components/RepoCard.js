@@ -2,11 +2,11 @@ import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import GitHubButton from "react-github-btn";
 
-const RepoCard = ({ project: { title, description, tags, link } }) => {
+const RepoCard = ({ project: { title, description, tags, link }, key }) => {
   return (
-    <div className="group w-full sm:w-1/2 m-4 mx-auto p-6 rounded-xl border-[0.5px] border-slate-900 shadow-[8px_6px_6px_0px] shadow-gray-500" style={{
+    <div key={key} className="group flex flex-col justify-center items-center m-4 p-6 rounded-xl border-[0.5px] border-slate-900 shadow-[8px_6px_6px_0px] shadow-gray-500 bg-gradient-to-br from-zinc-900 via-zinc-700 to-zinc-800" /**style={{
       "background": 'linear-gradient(45deg, red, orange, yellow, green, turquoise, cyan, blue, darkblue, purple, red)',
-    }}>
+    }}**/>
       <a href={link} target="_blank">
         <h1 className="text-xl text-center font-bold dark:text-gray-100">
           {title}{" "}
@@ -16,8 +16,8 @@ const RepoCard = ({ project: { title, description, tags, link } }) => {
       <hr className="my-4" />
       <p className="">{description}</p>
       <div className="mt-4 mb-8 flex flex-wrap justify-center items-center gap-2">
-        {tags.map((tag) => (
-          <div className="px-4 py-1 border-2 rounded-[0.325em]">{tag}</div>
+        {tags && tags.map((tag) => (
+          <div className="px-4 py-1 bg-[#388bfd26] hover:bg-[#1f6feb] font-medium text-[#6db1ff] hover:text-white duration-300 ease-in-out rounded-full">{tag}</div>
         ))}
       </div>
       <div className="w-full text-center">

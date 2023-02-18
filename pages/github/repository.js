@@ -1,14 +1,17 @@
 import config from "../../data/config";
 import React from "react";
-import Repositories from "../../components/Repo";
+import dynamic from "next/dynamic";
 import Head from "next/head";
-import SmoothGrid from "../../components/SmoothGrid";
-
+import SmoothGrid from "../../components/SmoothGrid"
 /** 
  * Render the RepositoryHome page inside a div element that's automatically configured for the webpage like the other conponent files are but leave the Next.js Head title alone
  * and use the configuration for the title and description for the actual piece within the webpage before rendering
  * the repositories component with the repos prop set with the project list data in the configuration file inside the smoothgrid component with the repositories data
  */
+
+const DynamicRepositories = dynamic(() => import("../../components/Repo"), {
+    ssr: false
+})
 
 export default function RepositoryHome() { 
     return (
@@ -32,7 +35,8 @@ export default function RepositoryHome() {
                     </p>
                 </div>
             <SmoothGrid className="space-x-5 grid -mx-4 justify-items-center items-center" gap="1rem" gridTemplateColumns="auto" gridTemplateRows="auto">
-                <Repositories repos={config.projects} />
+                <h1 className="mt-8 text-2xl md:text-4xl text-center font-extrabold">My projects</h1>
+                <DynamicRepositories repos={config.projects} />
             </SmoothGrid>
         </div>
     );
