@@ -17,7 +17,7 @@ const RepoCard = ({ project: { title, description, tags, link }, key }) => {
       <p className="text-ellipsis overflow-wrap">{description}</p>
       <div className="mt-4 mb-8 flex flex-wrap justify-center items-center gap-2">
         {tags && tags.map((tag) => (
-          <div className="px-4 py-1 bg-[#388bfd26] hover:bg-[#1f6feb] font-medium text-[#6db1ff] hover:text-white duration-300 ease-in-out rounded-full">{tag}{/** These Are Topic Chip Components customly */}</div>
+          <a className="px-4 py-1 bg-[#388bfd26] hover:bg-[#1f6feb] font-medium text-[#6db1ff] hover:text-white duration-300 ease-in-out rounded-full" target="_blank" href={`https://github.com/topics/${tag}`} title={`Topic: ${tag}`}>{tag}{/** These Are Topic Chip Components customly */}</a>
         ))}
       </div>
       <div className="w-full text-center">
