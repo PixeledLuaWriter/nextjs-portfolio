@@ -13,8 +13,8 @@ const RepoCard = ({ project: { title, description, tags, link }, key }) => {
           <FaExternalLinkAlt className="inline align-baseline" />
         </h1>
       </a>
-      <hr className="my-4" />
-      <p className="">{description}</p>
+      <hr className="my-4 w-full h-[4px] border border-white bg-white rounded-2xl" />
+      <p className="text-ellipsis overflow-wrap">{description}</p>
       <div className="mt-4 mb-8 flex flex-wrap justify-center items-center gap-2">
         {tags && tags.map((tag) => (
           <div className="px-4 py-1 bg-[#388bfd26] hover:bg-[#1f6feb] font-medium text-[#6db1ff] hover:text-white duration-300 ease-in-out rounded-full">{tag}{/** These Are Topic Chip Components customly */}</div>

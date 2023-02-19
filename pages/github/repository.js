@@ -15,7 +15,7 @@ const DynamicRepositories = dynamic(() => import("../../components/Repo"), {
 
 export default function RepositoryHome() { 
     return (
-        <div className="transition-colors container overflow-ellipsis overflow-hidden">
+        <div className="transition-colors container overflow-ellipsis overflow-hidden justify-center items-center mx-auto">
             <Head>
                 <title>Repositories</title>
                 <meta property='og:title' content='The repository homepage of all of my projects' />

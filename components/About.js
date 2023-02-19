@@ -2,6 +2,13 @@ import React from "react"
 import Image from "next/image"
 import profile from "../public/PixeledLuaWriter.jpg"
 import Link from "next/link"
+import ReactIcon from "./Icons/React"
+import NextJSIcon from "./Icons/Next"
+import NodeJSIcon from "./Icons/NodeJS"
+import HTMLIcon from "./Icons/HTML"
+import CSSIcon from "./Icons/CSS"
+import PostCSSIcon from "./Icons/PostCSS"
+import TailwindIcon from "./Icons/Tailwind"
 
 const About = () => {
     return (
@@ -19,8 +26,30 @@ const About = () => {
                     </div>
                     <div className="transition-colors ease-in-out mt-4 text-gray-800 dark:text-white rounded-[6px] border-2">
                         <p className="m-4">
-                            This portfolio contains a stack of the following: Next.JS, React.JS, Node.JS, HTML5, CSS3, PostCSS and TailwindCSS
+                            This portfolio contains a stack of the following:
                         </p>
+                        <div className="flex items-center p-4">
+                            <ReactIcon width={'48'} height={'48'} />
+                            <h1 className="text-lg">React.JS</h1>
+                        </div>
+                        <div className="flex items-center p-4">
+                            <NextJSIcon width={'48'} height={'48'} /> Next.JS
+                        </div>
+                        <div className="flex items-center p-4">
+                            <NodeJSIcon width={'48'} height={'48'} /> Node.JS
+                        </div>
+                        <div className="flex items-center p-4">
+                            <HTMLIcon width={'48'} height={'48'} /> HTML5
+                        </div>
+                        <div className="flex items-center p-4">
+                            <CSSIcon width={'48'} height={'48'} /> CSS3
+                        </div>
+                        <div className="flex items-center p-4">
+                            <PostCSSIcon width={'48'} height={'48'} /> PostCSS
+                        </div>
+                        <div className="flex items-center p-4">
+                            <TailwindIcon width={'48'} height={'48'} /> TailwindCSS
+                        </div>
                     </div>
                 </div>
                 <div className="flex-shrink-0 lg:mt-12 lg:px-4 mb-10">

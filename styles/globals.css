@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .overflow-wrap {
+        overflow-wrap: anywhere;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar-track {
+    scrollbar-width: none;
+    display: none;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+::-webkit-scrollbar-track-piece {
+    display: none;
+}

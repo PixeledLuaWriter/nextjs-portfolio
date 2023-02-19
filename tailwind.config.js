@@ -962,6 +962,7 @@ module.exports = {
     'disabled',
   ],
   plugins: [
-    require("tailwindcss-textshadow")
+    require("tailwindcss-textshadow"),
+    require("tailwind-scrollbar")
   ],
 }
