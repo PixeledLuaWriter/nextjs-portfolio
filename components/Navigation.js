@@ -11,13 +11,13 @@ const Navigation = () => {
     }
     // use hamburger menu on nav bar and make a rounded menu come up with a list of links but leave current things in
     return (
-        <div className="transition-colors block sticky top-0 z-20 bg-white p-6 m-0 dark:bg-black bg-opacity-50 dark:bg-opacity-50 rounded backdrop-blur-md justify-self-center">
+        <div className="transition-colors block sticky top-0 z-20 bg-white p-6 m-0 dark:bg-black bg-opacity-50 dark:bg-opacity-50 rounded-lg backdrop-blur-md justify-self-center">
             <div className="transition-colors p-4 flex flex-row row-auto justify-between justify-self-center">
                 <Link href="/">
                     <a
                         className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx uppercase text dark:text-white"}
                     >
-                        PixeledLuaWriter
+                        PLW
                     </a>
                 </Link>
                 <HamburgerMenu toggled={isOpen} toggle={setIsOpen} />
