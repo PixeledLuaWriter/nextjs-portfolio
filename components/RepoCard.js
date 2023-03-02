@@ -4,7 +4,7 @@ import GitHubButton from "react-github-btn";
 
 const RepoCard = ({ project: { title, description, tags, link, id }, key }) => {
   return (
-    <div key={key} className="group flex flex-col justify-center items-center m-4 p-1 rounded-xl bg-[linear-gradient(to_bottom_right,_gold,_coral,_goldenrod,_chartreuse)] dark:bg-[linear-gradient(to_bottom_right,_darkorange,_magenta,_rebeccapurple)] border-none shadow-[8px_6px_6px_0px] shadow-gray-500" /**style={{
+    <div key={key} className="group flex flex-col justify-center items-center m-4 p-1 rounded-xl bg-[linear-gradient(to_bottom_right,_gold,_coral,_goldenrod,_chartreuse)] dark:bg-[linear-gradient(to_bottom_right,_darkorange,_magenta,_rebeccapurple)] border-none shadow-[8px_6px_6px_0px] shadow-gray-500 transition-all ease-in-out duration-300" /**style={{
       "background": 'linear-gradient(45deg, red, orange, yellow, green, turquoise, cyan, blue, darkblue, purple, red)',
     }}**/>
       <div className="group-inner w-full h-full flex flex-col justify-center items-center bg-slate-100 dark:bg-neutral-800 p-6 rounded-xl ease-in-out duration-300 transition-colors">
