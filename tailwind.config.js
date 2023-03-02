@@ -6,6 +6,20 @@ module.exports = {
   presets: [],
   darkMode: 'class', // or 'class'
   theme: {
+    extend: {
+      colors: {
+        magenta: "magenta",
+        darkorange: "darkorange",
+        rebeccapurple: "rebeccapurple",
+        charteuse: "charteuse",
+        gold: "gold",
+        coral: "coral",
+        goldenrod: "goldenrod"
+      },
+      gradientColorStops: {
+        
+      }
+    },
     screens: {
       '2xs': '320px',
       xs: '425px',
