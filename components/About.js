@@ -1,7 +1,6 @@
 import React from "react"
 import Image from "next/image"
-import profile from "../public/PixeledLuaWriter.jpg"
-import Link from "next/link"
+import profile from "../public/assets/Icons/PixeledLuaWriter.jpg"
 import ReactIcon from "./Icons/React"
 import NextJSIcon from "./Icons/Next"
 import NodeJSIcon from "./Icons/NodeJS"
@@ -24,7 +23,7 @@ const About = () => {
                             And i also wanted to try and see how doing a portfolio would look like with a stack.
                         </p>
                     </div>
-                    <div className="transition-colors ease-in-out mt-4 text-gray-800 dark:text-white rounded-[6px] border-2">
+                    <div className="transition-colors ease-in-out w-auto h-auto mt-4 text-gray-800 dark:text-white rounded-[6px] border-2">
                         <p className="m-4">
                             This portfolio contains a stack of the following:
                         </p>
@@ -53,15 +52,17 @@ const About = () => {
                     </div>
                 </div>
                 <div className="flex-shrink-0 lg:mt-12 lg:px-4 mb-10">
-                    <Image
-                        src={profile}
-                        alt="Profile"
-                        priority={true}
-                        className="duration-300 ease-in-out rounded-[0.325rem] active:focus:outline-none active:rounded-tl-[45.824rem] active:rounded-br-[45.824rem]"
-                        width={250}
-                        height={250}
-                        placeholder="blur"
-                    />
+                    <a href={"https://github.com/PixeledLuaWriter"} className="[text-decoration:_none]" target="_blank">
+                        <Image
+                            src={profile}
+                            alt="Profile"
+                            priority={true}
+                            className="duration-300 ease-in-out rounded-[0.325rem] active:focus:outline-none active:rounded-tl-[45.824rem] active:rounded-br-[45.824rem]"
+                            width={250}
+                            height={250}
+                            placeholder="blur"
+                        />
+                    </a>
                 </div>
             </div>
         </div>

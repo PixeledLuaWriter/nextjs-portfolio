@@ -15,7 +15,7 @@ const Navigation = () => {
             <div className="transition-colors p-4 flex flex-row row-auto justify-between justify-self-center">
                 <Link href="/">
                     <a
-                        className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx uppercase text dark:text-white"}
+                        className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx text dark:text-white"}
                     >
                         PLW
                     </a>
@@ -23,7 +23,7 @@ const Navigation = () => {
                 <HamburgerMenu toggled={isOpen} toggle={setIsOpen} />
                 <div className="" style={{
                     "display": isOpen ? "flex" : "none",
-                    "top": "8rem",
+                    "top": "10rem",
                     "right": "0rem",
                     "left": "0rem",
                     "bottom": "0rem",
@@ -33,6 +33,9 @@ const Navigation = () => {
                     "borderRadius": "0.5rem 0.5rem",
                     "position": "absolute",
                     "justifyItems": "center",
+                    "flexDirection": "column",
+                    "alignItems": "center",
+                    "flexGrow": 1,
                 }}>
                     <Paper className="transition-all p-6 m-auto w-[50%]  ease-in-out bg-white dark:bg-black bg-opacity-50 dark:bg-opacity-50 rounded-lg shadow-md">
                         <div className="bg-transparent flex flex-col antialiased items-center">
@@ -68,7 +71,14 @@ const Navigation = () => {
                                     Hobbies
                                 </a>
                             </Link>
-                        </div>
+                            <Link href='/gallery/wallpapers'>
+                                <a
+                                    className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx uppercase text dark:text-white"}
+                                    onClick={handleClosing}
+                                >
+                                    Wallpapers
+                                </a>
+                            </Link>                        </div>
                     </Paper>
                 </div>
                 <ThemeSwitch />
