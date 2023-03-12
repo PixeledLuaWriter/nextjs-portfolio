@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "next/image"
-import profile from "../public/assets/Icons/PixeledLuaWriter.jpg"
+import profile from "../public/assets/icons/PixeledLuaWriter.jpg"
 import ReactIcon from "./Icons/React"
 import NextJSIcon from "./Icons/Next"
 import NodeJSIcon from "./Icons/NodeJS"
