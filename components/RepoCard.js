@@ -5,10 +5,10 @@ import { genRandString } from "../data/config";
 
 const RepoCard = ({ project: { title, description, tags, link, id } }) => {
   return (
-    <div key={genRandString(16)} className="repo-card-group flex self-center w-full h-full p-1 rounded-xl [background:_linear-gradient(to_bottom_right,_gold,_coral,_goldenrod,_chartreuse)] dark:[background:_linear-gradient(to_bottom_right,_darkorange,_magenta,_rebeccapurple)] border-none shadow-[8px_6px_6px_0px] shadow-gray-500" /**style={{
+    <div key={genRandString(16)} className="repo-card-group 2xs:[border-radius:_2rem] xs:[border-radius:_1.75rem] sm:rounded-3xl md:[border-radius:_1.25rem] lg:rounded-2xl xl:rounded-xl flex self-center w-full h-full p-1 rounded-xl [background:_linear-gradient(to_bottom_right,_gold,_coral,_goldenrod,_chartreuse)] dark:[background:_linear-gradient(to_bottom_right,_darkorange,_magenta,_rebeccapurple)] border-none shadow-[8px_6px_6px_0px] shadow-gray-500" /**style={{
       "background": 'linear-gradient(45deg, red, orange, yellow, green, turquoise, cyan, blue, darkblue, purple, red)',
     }}**/>
-      <div key={genRandString(16)} className="repo-card-group-inner backdrop-blur w-full h-full before:absolute box-border self-center align-middle flex flex-col flex-grow content-center justify-center items-center bg-slate-100/[45%] dark:bg-neutral-800/[45%] p-6 rounded-lg ease-in-out duration-300 transition-colors">
+      <div key={genRandString(16)} className="repo-card-group-inner 2xs:[border-radius:_1.75rem] xs:[border-radius:_1.5rem] sm:[border-radius:_1.25rem] md:rounded-2xl lg:rounded-xl xl:rounded-lg backdrop-blur w-full h-full before:absolute box-border self-center align-middle flex flex-col flex-grow content-center justify-center items-center bg-slate-100/[45%] dark:bg-neutral-800/[45%] p-6 rounded-lg ease-in-out duration-300 transition-colors">
         <a key={genRandString(16)} href={link} target="_blank">
           <h1 key={genRandString(16)} className="text-xl text-center font-bold dark:text-gray-100">
             {title}{" "}

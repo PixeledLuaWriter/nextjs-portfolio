@@ -19,6 +19,7 @@ export default function Wallpapers() {
                             src={grey_matter}
                             alt={"grey matter"}
                             placeholder={"blur"}
+                            priority={true}
                             className="rounded-lg p-4"
                             width={1920}
                             height={1080}
@@ -33,6 +34,7 @@ export default function Wallpapers() {
                             src={red_matter}
                             alt={"red matter"}
                             placeholder={"blur"}
+                            priority={true}
                             className="rounded-lg p-4"
                             width={1920}
                             height={1080}
@@ -47,6 +49,7 @@ export default function Wallpapers() {
                             src={light_matter}
                             alt={"light matter"}
                             placeholder={"blur"}
+                            priority={true}
                             className="rounded-lg p-4"
                             width={1920}
                             height={1080}
@@ -61,6 +64,7 @@ export default function Wallpapers() {
                             src={pink_matter}
                             alt={"pink matter"}
                             placeholder={"blur"}
+                            priority={true}
                             className="rounded-lg p-4"
                             width={1920}
                             height={1080}
@@ -75,6 +79,7 @@ export default function Wallpapers() {
                             src={dark_matter}
                             alt={"dark matter"}
                             placeholder={"blur"}
+                            priority={true}
                             className="rounded-lg p-4"
                             width={1920}
                             height={1080}
