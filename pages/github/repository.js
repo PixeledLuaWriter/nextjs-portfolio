@@ -15,7 +15,7 @@ const DynamicRepositories = dynamic(() => import("../../components/Repo"), {
 
 export default function RepositoryHome() { 
     return (
-        <div className="transition-colors container overflow-ellipsis overflow-hidden justify-center items-center mx-auto">
+        <div className="transition-colors ease-in-out duration-300 container overflow-ellipsis overflow-hidden justify-center items-center mx-auto">
             <Head>
                 <title>Repositories</title>
                 <meta property='og:title' content='The repository homepage of all of my projects' />
@@ -25,7 +25,7 @@ export default function RepositoryHome() {
                 <meta property='twitter:card' content='summary_large_image' />
             </Head>
             <div className="overflow-x-hidden antialiased p-4">
-                <h2 className="text-center">
+                <h2 className="text-center text-2xl font-bold">
                     {config.title}
                 </h2>
                 <p className="text-xl text-center font-medium p-4">

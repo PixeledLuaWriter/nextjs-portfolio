@@ -11,10 +11,10 @@ import TailwindIcon from "./Icons/Tailwind"
 
 const About = () => {
     return (
-        <div className="transition-colors ease-in-out container px-4 mx-auto">
-            <div className="transition-colors ease-in-out lg:space-x-5 lg:flex lg:flex-row item-center lg:-mx-4 flex flex-col-reverse text-center lg:text-left">
-                <div className="transition-colors ease-in-out lg:px-4 lg:mt-12 ">
-                    <div className="transition-colors ease-in-out mt-4 text-gray-800 dark:text-white rounded-[6px] border-2">
+        <div className="transition-colors ease-in-out duration-300 container px-4 mx-auto">
+            <div className="transition-colors ease-in-out duration-300 lg:space-x-5 lg:flex lg:flex-row item-center lg:-mx-4 flex flex-col-reverse text-center lg:text-left">
+                <div className="transition-colors ease-in-out duration-300 lg:px-4 lg:mt-12 ">
+                    <div className="transition-colors ease-in-out duration-300 mt-4 text-gray-800 dark:text-white rounded-[6px] border-2">
                         <p className="m-4">
                             This portfolio was created with The Next.JS Framework For React.JS and TailwindCSS,
                             If you want to see my projects just click the hamburger button on the navbar to and click the Repositories button to see my public repositories on github
@@ -23,7 +23,7 @@ const About = () => {
                             And i also wanted to try and see how doing a portfolio would look like with a stack.
                         </p>
                     </div>
-                    <div className="transition-colors ease-in-out w-auto h-auto mt-4 text-gray-800 dark:text-white rounded-[6px] border-2">
+                    <div className="transition-colors ease-in-out duration-300 w-auto h-auto mt-4 text-gray-800 dark:text-white rounded-[6px] border-2">
                         <p className="m-4">
                             This portfolio contains a stack of the following:
                         </p>

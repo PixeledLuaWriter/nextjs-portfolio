@@ -5,8 +5,8 @@ const nextConfig = {
   reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
-  }
+  },
+  swcMinify: true,
 }
 
-module.exports = nextConfig
-module.exports = withTM()
+module.exports = withTM(nextConfig)

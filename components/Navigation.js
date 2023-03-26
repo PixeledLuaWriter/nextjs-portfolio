@@ -11,7 +11,7 @@ const Navigation = () => {
     }
     // use hamburger menu on nav bar and make a rounded menu come up with a list of links but leave current things in
     return (
-        <div className="transition-colors block sticky top-0 z-20 bg-white p-6 m-0 dark:bg-black bg-opacity-50 dark:bg-opacity-50 rounded-lg backdrop-blur-md justify-self-center">
+        <div className="transition-all ease-in-out duration-300 w-full h-full sticky top-0 z-10 bg-white p-6 m-0 dark:bg-black bg-opacity-50 dark:bg-opacity-50 rounded-lg backdrop-blur-md justify-self-center">
             <div className="transition-colors p-4 flex flex-row row-auto justify-between justify-self-center">
                 <Link href="/">
                     <a
@@ -21,30 +21,18 @@ const Navigation = () => {
                     </a>
                 </Link>
                 <HamburgerMenu toggled={isOpen} toggle={setIsOpen} />
-                <div className="" style={{
-                    "display": isOpen ? "flex" : "none",
-                    "top": "10rem",
-                    "right": "0rem",
-                    "left": "0rem",
-                    "bottom": "0rem",
-                    "transition": "all 0.3s ease-in-out",
-                    //"backdropFilter": "blur(10px)",
-                    "transform": isOpen ? "translateX(0)" : "translateX(100%)",
-                    "borderRadius": "0.5rem 0.5rem",
-                    "position": "absolute",
-                    "justifyItems": "center",
-                    "flexDirection": "column",
-                    "alignItems": "center",
-                    "flexGrow": 1,
-                }}>
-                    <Paper className="transition-all p-6 m-auto w-[50%]  ease-in-out bg-white dark:bg-black bg-opacity-50 dark:bg-opacity-50 rounded-lg shadow-md">
+                <ThemeSwitch />
+            </div>
+            {isOpen && (
+                <div className={`p-2 z-20 bg-transparent ${isOpen ? "flex" : "hidden"} justify-center items-center sticky`} >
+                    <div className="transition-all p-6 m-auto ease-in-out duration-300 bg-white dark:bg-black rounded-lg shadow-md">
                         <div className="bg-transparent flex flex-col antialiased items-center">
                             <Link href="/">
                                 <a
                                     className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx uppercase text dark:text-white"}
                                     onClick={handleClosing}
                                 >
-                                    Home
+                                                    Home
                                 </a>
                             </Link>
                             <Link href="/about">
@@ -52,7 +40,7 @@ const Navigation = () => {
                                     className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx uppercase text dark:text-white"}
                                     onClick={handleClosing}
                                 >
-                                    About
+                                                    About
                                 </a>
                             </Link>
                             <Link href="/github/repository">
@@ -60,7 +48,7 @@ const Navigation = () => {
                                     className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx uppercase text dark:text-white"}
                                     onClick={handleClosing}
                                 >
-                                    Repositories
+                                                    Repositories
                                 </a>
                             </Link>
                             <Link href='/hobbies'>
@@ -68,7 +56,7 @@ const Navigation = () => {
                                     className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx uppercase text dark:text-white"}
                                     onClick={handleClosing}
                                 >
-                                    Hobbies
+                                                    Hobbies
                                 </a>
                             </Link>
                             <Link href='/gallery/wallpapers'>
@@ -76,13 +64,13 @@ const Navigation = () => {
                                     className={"font-medium tracking-wider duration-150 text-gray-900 hover:text-sky-500 hover:text-shadow-smx2 hover:dark:text-red-700 hover:dark:text-shadow-smx uppercase text dark:text-white"}
                                     onClick={handleClosing}
                                 >
-                                    Wallpapers
+                                                    Wallpapers
                                 </a>
-                            </Link>                        </div>
-                    </Paper>
-                </div>
-                <ThemeSwitch />
-            </div>
+                            </Link>
+                        </div>
+                    </div>
+                </div>                
+            )}
         </div>
     );
 }
