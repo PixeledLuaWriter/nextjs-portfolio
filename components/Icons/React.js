@@ -1,4 +1,4 @@
-const ReactIcon = ({ width, height }) => {
+export function ReactIcon({ width, height }) {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" style={{
             fill: 'rgba(15, 212, 218, 1)',
@@ -14,4 +14,3 @@ const ReactIcon = ({ width, height }) => {
     )
 }
 
-export default ReactIcon

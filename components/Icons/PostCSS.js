@@ -1,4 +1,4 @@
-const PostCSSIcon = ({ width, height }) => {
+export function PostCSSIcon({ width, height }) {
     return (
         <svg viewBox="0 0 79 78" width={width} height={height} xmlns="http://www.w3.org/2000/svg"><g style={{
             stroke: '#e53935'
@@ -30,4 +30,3 @@ const PostCSSIcon = ({ width, height }) => {
     )
 }
 
-export default PostCSSIcon

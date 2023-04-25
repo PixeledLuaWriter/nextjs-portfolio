@@ -1,20 +1,13 @@
 import React from "react"
 import Image from "next/image"
-import profile from "../public/assets/icons/PixeledLuaWriter.jpg"
-import ReactIcon from "./Icons/React"
-import NextJSIcon from "./Icons/Next"
-import NodeJSIcon from "./Icons/NodeJS"
-import HTMLIcon from "./Icons/HTML"
-import CSSIcon from "./Icons/CSS"
-import PostCSSIcon from "./Icons/PostCSS"
-import TailwindIcon from "./Icons/Tailwind"
-
+import profile from "../../public/assets/icons/PixeledLuaWriter.jpg"
+import { ReactIcon, NextIcon, NodeIcon, HtmlIcon, PostCssIcon, CssIcon, TailwindCssIcon } from "../Icons/index"
 const About = () => {
     return (
         <div className="transition-colors ease-in-out duration-300 container px-4 mx-auto">
             <div className="transition-colors ease-in-out duration-300 lg:space-x-5 lg:flex lg:flex-row item-center lg:-mx-4 flex flex-col-reverse text-center lg:text-left">
                 <div className="transition-colors ease-in-out duration-300 lg:px-4 lg:mt-12 ">
-                    <div className="transition-colors ease-in-out duration-300 mt-4 text-gray-800 dark:text-white rounded-[6px] border-2">
+                    <div className="transition-colors ease-in-out duration-300 mt-4 border-black dark:border-white text-black dark:text-white rounded-[6px] border-2">
                         <p className="m-4">
                             This portfolio was created with The Next.JS Framework For React.JS and TailwindCSS,
                             If you want to see my projects just click the hamburger button on the navbar to and click the Repositories button to see my public repositories on github
@@ -23,7 +16,7 @@ const About = () => {
                             And i also wanted to try and see how doing a portfolio would look like with a stack.
                         </p>
                     </div>
-                    <div className="transition-colors ease-in-out duration-300 w-auto h-auto mt-4 text-gray-800 dark:text-white rounded-[6px] border-2">
+                    <div className="transition-colors ease-in-out duration-300 w-auto h-auto mt-4 border-black dark:border-white text-black dark:text-white rounded-[6px] border-2">
                         <p className="m-4">
                             This portfolio contains a stack of the following:
                         </p>
@@ -32,22 +25,22 @@ const About = () => {
                             <h1 className="text-lg">React.JS</h1>
                         </div>
                         <div className="flex items-center p-4">
-                            <NextJSIcon width={'48'} height={'48'} /> Next.JS
+                            <NextIcon width={'48'} height={'48'} /> Next.JS
                         </div>
                         <div className="flex items-center p-4">
-                            <NodeJSIcon width={'48'} height={'48'} /> Node.JS
+                            <NodeIcon width={'48'} height={'48'} /> Node.JS
                         </div>
                         <div className="flex items-center p-4">
-                            <HTMLIcon width={'48'} height={'48'} /> HTML5
+                            <HtmlIcon width={'48'} height={'48'} /> HTML5
                         </div>
                         <div className="flex items-center p-4">
-                            <CSSIcon width={'48'} height={'48'} /> CSS3
+                            <CssIcon width={'48'} height={'48'} /> CSS3
                         </div>
                         <div className="flex items-center p-4">
-                            <PostCSSIcon width={'48'} height={'48'} /> PostCSS
+                            <PostCssIcon width={'48'} height={'48'} /> PostCSS
                         </div>
                         <div className="flex items-center p-4">
-                            <TailwindIcon width={'48'} height={'48'} /> TailwindCSS
+                            <TailwindCssIcon width={'48'} height={'48'} /> TailwindCSS
                         </div>
                     </div>
                 </div>

@@ -16,13 +16,12 @@ module.exports = {
         coral: "coral",
         goldenrod: "goldenrod"
       },
-      gradientColorStops: {
-        
+      screens: {
+        '2xs': '320px',
+        xs: '425px',  
       }
     },
     screens: {
-      '2xs': '320px',
-      xs: '425px',
       sm: '640px',
       md: '768px',
       lg: '1024px',

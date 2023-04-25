@@ -1,4 +1,4 @@
-const TailwindIcon = ({ width, height }) => {
+export function TailwindIcon({ width, height }) {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 24 24" style={{
             fill: 'rgba(56, 189, 249, 1)',
@@ -10,4 +10,3 @@ const TailwindIcon = ({ width, height }) => {
     )
 }
 
-export default TailwindIcon

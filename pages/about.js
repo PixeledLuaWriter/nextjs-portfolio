@@ -1,4 +1,4 @@
-import AboutContent from "../components/About";
+import AboutContent from "../components/layouts/About";
 import Head from "next/head";
 
 export default function AboutPage() {
