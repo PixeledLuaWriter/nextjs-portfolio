@@ -25,7 +25,7 @@
     "react-flip-toolkit": "^7.0.17",
     "react-github-btn": "^1.4.0",
     "react-icons": "^4.7.1",
-    "react-transition-group": "^2.9.0",
+    "react-transition-group": "^4.4.5",
     "typescript": "^5.0.0"
   },
   "devDependencies": {
