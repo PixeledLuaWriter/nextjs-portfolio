@@ -16,7 +16,7 @@
     "@material-tailwind/react": "^1.4.2",
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.12",
-    "animate-css-grid": "^1.4.3",
+    "animate-css-grid": "^1.5.1",
     "hamburger-react": "^2.5.0",
     "next": "15.5.24",
     "next-themes": "^0.1.1",
