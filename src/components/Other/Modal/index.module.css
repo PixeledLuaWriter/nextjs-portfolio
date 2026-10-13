@@ -1,0 +1,14 @@
+.modalHeader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 64px;
+	padding: 0 32px;
+	flex-shrink: 0;
+}
+
+.modalHeading {
+	font-size: 2.2rem;
+	text-align: center;
+	line-height: 2.5rem;
+}
