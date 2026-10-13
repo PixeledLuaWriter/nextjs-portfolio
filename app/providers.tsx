@@ -8,7 +8,7 @@ export function Providers({
 }) {
 	return (
 		<ThemeProvider
-		  attribute="selector"
+		  attribute="class"
 		  >
 			{children}
 		  </ThemeProvider>
