@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useCallback, useId, PropsWithChildren } from "react"
-import { AnimatePresence, AnimationProps, useReducedMotion, motion } from "motion/react"
+import { AnimatePresence, useReducedMotion, motion } from "motion/react"
 import { defaultModalVariants, defaultBackdropVariants } from "./index.utils"
 import Portal from "@/components/Other/Portal"
 import "./index.module.css"
@@ -12,8 +12,8 @@ type ModalProps = PropsWithChildren<{
 	onClickBackdrop?: (e: React.MouseEvent) => void; // Optional callback function when the backdrop is clicked
 	onPressEscape?: (e: KeyboardEvent) => void; // Optional callback function when the escape key is pressed
 	modalClassName?: string; // Optional class name for the modal
-	animation?: AnimationProps; // Optional animation props for the modal
-	backdropAnimation?: AnimationProps; // Optional animation props for the backdrop
+	animation?: any | unknown; // Optional animation props for the modal
+	backdropAnimation?: any | unknown; // Optional animation props for the backdrop
 }>
 
 /**
