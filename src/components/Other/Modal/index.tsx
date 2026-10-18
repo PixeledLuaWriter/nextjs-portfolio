@@ -1,8 +1,9 @@
 "use client"
 import React, { useEffect, useCallback, useId, PropsWithChildren } from "react"
-import { AnimatePresence, AnimationProps, useReducedMotion, motion } from "motion/react"
+import { AnimatePresence, useReducedMotion, motion, Variants } from "motion/react"
 import { defaultModalVariants, defaultBackdropVariants } from "./index.utils"
 import Portal from "@/components/Other/Portal"
+import useBodyScrollLock from "@/utils/useBodyScrollLock/useBodyScrollLock"
 import "./index.module.css"
 
 type ModalProps = PropsWithChildren<{
@@ -12,8 +13,8 @@ type ModalProps = PropsWithChildren<{
 	onClickBackdrop?: (e: React.MouseEvent) => void; // Optional callback function when the backdrop is clicked
 	onPressEscape?: (e: KeyboardEvent) => void; // Optional callback function when the escape key is pressed
 	modalClassName?: string; // Optional class name for the modal
-	animation?: AnimationProps; // Optional animation props for the modal
-	backdropAnimation?: AnimationProps; // Optional animation props for the backdrop
+	animation?: Variants; // Optional animation props for the modal
+	backdropAnimation?: Variants; // Optional animation props for the backdrop
 }>
 
 /**
@@ -33,6 +34,8 @@ export default function Modal({
 	backdropAnimation = defaultBackdropVariants,
 	children
 }: ModalProps) {
+	// Lock body scroll when modal is visible
+	useBodyScrollLock();
 	// motion hook that returns if reduced motion is needed due to Reduced Motion device setting.
 	const shouldReduceMotion = useReducedMotion()
 
