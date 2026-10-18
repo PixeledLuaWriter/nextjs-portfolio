@@ -13,8 +13,8 @@ type ModalProps = PropsWithChildren<{
 	onClickBackdrop?: (e: React.MouseEvent) => void; // Optional callback function when the backdrop is clicked
 	onPressEscape?: (e: KeyboardEvent) => void; // Optional callback function when the escape key is pressed
 	modalClassName?: string; // Optional class name for the modal
-	animation?: Variants; // Optional animation props for the modal
-	backdropAnimation?: Variants; // Optional animation props for the backdrop
+	animation?: any | unknown; // Optional animation props for the modal
+	backdropAnimation?: any | unknown; // Optional animation props for the backdrop
 }>
 
 /**
